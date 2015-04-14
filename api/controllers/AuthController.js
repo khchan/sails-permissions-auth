@@ -17,4 +17,11 @@ _.merge(exports, {
    *   return _super.foo(bar);
    * }
    */
+  authenticated: function authenticated(req, res) {
+    if (req.isAuthenticated()) {
+      res.json(200, req.user);
+    } else {
+      res.json(200, false);
+    }
+  }
 });
