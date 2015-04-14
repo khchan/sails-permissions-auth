@@ -1,1 +1,3 @@
-# sails-waterlock-auth
+# permissions
+
+a [Sails](http://sailsjs.org) application
